@@ -1,0 +1,49 @@
+{
+  "name": "amirys/otp",
+  "description": "generate and verify otp",
+  "keywords": [
+    "amir-ys"
+  ],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "amir yousefi",
+      "email": "amir.you74@gmail.com",
+      "homepage": "https://github.com/amir_ys/otp",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^9.0|^10.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0|^8.0",
+    "phpunit/phpunit": "^9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Amirys\\Otp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Amirys\\Otp\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Amirys\\Otp\\OtpServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  }
+}
